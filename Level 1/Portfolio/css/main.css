@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(/pictures/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+#hand{
+    width: 75px;
+    height: auto;
+    position: relative;
+    top: -77px;
+    left: 105px;
+}
+#hero{
+    padding: 136px 0px 78px 322px;
+}
+#hero h1{
+    font-size: 67px;
+    color: #E29578;
+}
+#hero h2{
+    font-size: 45px;
+    position: relative;
+    top: -49px;
+    color: #006D77;
+}
+#hero h3{
+    position: relative;
+    top: -45px;
+    left: 117px;
+}
+
+@media(max-width:817px){
+    #hero{
+        padding: 136px 0px 78px 276px;
+    }
+}
+
+@media(max-width:697px){
+    #hero{
+        padding: 136px 0px 78px 207px;
+    }
+}
+
+@media(max-width:609px){
+    #hero{
+        padding: 136px 0px 78px 168px;
+    }
+}
+
+#about{
+    width: fit-content;
+    height: auto;
+    padding-left: 139px;
+    padding-right: 50px;
+    padding-top: 50px;
+    display: flex;    
+    gap: 15rem;
+}
+#about h1{
+    font-size: 55px;
+    color: #006D77;
+    
+}
+#about p{
+    width: 500px;
+    font-size: 28px;    
+    padding-top: 26px;
+}
+
+#aboutanim{
+    display: inline-block;
+    width: 350px;
+    padding-top: 40px;
+}
+
+@media (max-width: 1323px){
+    #about{
+        gap: 13rem;
+    }
+}
+
+@media (max-width: 1230px){
+    #about{
+        gap: 9rem;
+    }
+}
+
+@media (max-width: 1160px){
+    #about{
+        gap: 6rem;
+    }
+}
+
+@media (max-width: 1102px){
+    #about{
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 1026px){
+    #about{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .abtxtx h1{
+        width: 500px;
+    }
+}
+
+@media (max-width: 701px) {
+    #about{
+    padding-left: 74px;
+    }
+}
+
+@media (max-width: 597px) {
+    #about{
+    padding-left: 55px;
+    }
+}
+
+#skills{
+    width:100%;
+    height: auto;
+    padding-right: 139px;
+    padding-top: 100px;
+    padding-bottom: 100px;  
+    display: flex;  
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+#skills h1{
+    font-size: 55px;
+    color: #006D77;
+    
+}
+#skills p{
+    width: 500px;
+    font-size: 28px;  
+    padding-top: 26px;  
+}
+
+.skilltxt{
+    text-align: right;
+}
+
+#skillanim{
+    width: 300px;
+    display: inline-block;
+}
+
+@media(max-width: 937px){
+    #skills{
+        flex-direction: column;
+    }
+
+    .skilltxt{
+        text-align:center;
+    }
+
+    #skills p {
+        width: 608px;
+        font-size: 28px;
+        padding-top: 26px;
+        margin-left: 142px;
+        margin-bottom: 67px;
+    }
+
+    #skillanim {
+        width: 357px;
+        align-self: center;
+      }
+}
+
+@media(max-width:835px) {
+    #skills p {
+        margin-left: 84px;
+      }
+}
+
+@media(max-width:835px) {
+    #skills p {
+        margin-left: 54px;
+      }
+}
+
+@media(max-width:671px) {
+    #skills p {
+        width: 500px;
+        margin-left: 89px;
+      }
+}
+
+@media(max-width:606px) {
+    #skills p {
+        margin-left: 54px;
+      }
+}
+
+@media(max-width:606px) {
+    #skills p {
+        margin-left: 34px;
+      }
+}
+
+#contact{
+    width: fit-content;
+    height: auto;
+    padding-left: 139px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+        
+}
+#contact h2{
+    font-size: 55px;
+    color: #006D77;
+
+}
+#contact p{
+    width:fit-content;
+    font-size: 28px;  
+    padding-top: 26px;  
+     
+}
+
+#contact img{
+    width: 50px;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    position: relative;
+    right: 5px;
+}
+
+.social a{
+    padding: 5px;
+}
+
+.social a img:hover{
+    scale: 1.2;
+    transition: 0.3s;
+}

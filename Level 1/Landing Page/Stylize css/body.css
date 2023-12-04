@@ -1,0 +1,406 @@
+/* Section#1 */
+.section1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        'content image';
+    gap: 1rem;
+    padding-top: 2rem;
+}
+
+.hero-section {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding-top: 5rem;
+    padding-left: 4rem;
+}
+
+.hero-heading {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr;
+    gap: 10x;
+    align-items: flex-start;
+
+}
+
+.hp1 {
+    font-size: 44px;
+    position: relative;
+    bottom: 5rem;
+}
+
+.hp2 {
+    font-size: 84px;
+    position: relative;
+    bottom: 1.8rem;
+    right: 1rem;
+}
+
+.hero-section h3{
+    position: relative;
+    right: 3.5rem;
+    top: 0.3rem;
+}
+
+.hero-section p{
+    width: 550px;
+    padding-top: 1rem;
+}
+
+.hero-btn {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 2px solid rgb(246, 102, 0);
+    color: rgb(246, 102, 0);
+    font-weight: bold;
+    border-radius: 12px;
+    font-size: 18px;
+    padding: 0.5rem;
+}
+
+.hero-btn:hover{
+    background-color: rgb(246, 102, 0);
+    color: white;
+    transition: 0.3s;
+}
+
+.hero-animation{
+    grid-area: image;
+    width: fit-content;; 
+    height: auto; 
+    padding-right: 3rem;
+}
+/* Section#1 */
+
+/* Section#2 */
+.section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'image content';
+    gap: 20px; 
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: rgb(238, 238, 238);
+}
+
+.about {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 5rem;
+}
+
+.about h2 {
+    margin: 10px 0px;
+    font-size: 60px;
+}
+
+.about p{
+    width: 65%;
+    font-size: 20px;
+    padding-top: 1rem;
+}
+
+.about-animation {
+    grid-area: image;
+    width: fit-content;
+    height: auto;
+}
+/* Section#2 */
+
+/* Section#3 */
+.section3 {
+    text-align: center;
+    padding: 60px;
+}
+
+.section3 h1 {
+    margin: 50px 0px 0px 0px;
+    font-size: 60px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+.box {
+    text-align: center;
+    padding: 0px 20px 20px 20px;
+    margin: 60px 0px 0px 0px;
+    max-width: 350px; 
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(255, 115, 65);
+}
+
+.box:hover{
+    scale: 1.1;
+    transition: 0.3s ease-in-out;
+    background-color:rgb(255, 199, 150);
+    border: 2px solid rgb(255, 119, 0);
+}
+
+.box2{
+    margin-top: 90px;
+}
+
+.serv-btn {
+    margin-top: 10px;
+    border: 2px solid rgb(246, 102, 0);
+    color: rgb(246, 102, 0);
+    background-color: rgb(255, 199, 150);
+    font-weight: bold;
+    border-radius: 12px;
+    font-size: 18px;
+    padding: 0.5rem;
+}
+
+.serv-btn:hover{
+    background-color: rgb(246, 102, 0);
+    color: white;
+    transition: 0.3s;
+}
+
+.box:not(:last-child) {
+    margin-right: -90px; 
+}
+
+.serv-animation{
+    width: 300px; 
+    height: 300px;
+}
+/* Section#3 */
+
+/* Responsive  */
+
+@media (max-width: 1412px) {
+    .box:not(:last-child) {
+        margin-right: -52px;
+      }
+}
+
+@media (max-width: 1352px) {
+    .box:not(:last-child) {
+        margin-right: -36px;
+      }
+}
+
+@media (max-width: 1298px) {
+    .box:not(:last-child) {
+        margin-right: -20px;
+      }
+
+.box{
+    max-width: 331px;
+}      
+}
+
+
+@media (max-width: 1218px) {
+    /* Section#1 */
+
+.hp2 {
+    font-size: 74px;
+}
+
+.hero-section h3{
+    position: relative;
+    right: 1.5rem;
+    top: 0.3rem;
+}
+
+.hero-section p{
+    width: 550px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.hero-btn {
+    margin-bottom: 10px;
+}
+
+.hero-animation{
+    width: fit-content;
+}
+/* Section#1 */
+
+/* Section#2 */
+
+.about-animation {
+    grid-area: image;
+    width: 450px;
+    height: auto;
+    position: relative;
+    left: 10rem;
+}
+/* Section#2 */
+
+
+/* Section#3 */
+
+.box {
+    max-width: 332px; 
+}
+
+.box2{
+    margin-top: 90px;
+}
+
+.box:not(:last-child) {
+    margin-right: 28px;
+}
+.serv-animation{
+    width: 280px;
+    height: 251px;
+}
+
+.box h2{
+    font-size: 21px;
+}
+
+.box p{
+    font-size: 15px;
+}
+/* Section#3 */
+}
+
+@media (max-width: 1152px){
+.hero-animation{
+    width: fit-content;
+}
+
+.section1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        'content'
+        'image';
+    gap: 1rem;
+    padding-top: 2rem;
+}
+}
+
+@media (max-width:1086px) {
+    /* Section#1 */
+    .hp1{
+        font-size: 39px;
+    }
+    .hp2 {
+        font-size: 69px;
+    }
+    
+    .hero-section h3{
+        position: relative;
+        right: 1.5rem;
+        top: 0.3rem;
+    }
+    
+    .hero-section p{
+        width: 550px;
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+    
+    .hero-btn {
+        margin-bottom: 10px;
+    }
+    /* Section#1 */
+    
+    /* Section#2 */
+    .section2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        grid-template-areas: 'content'
+        'image';
+    }
+
+    .about-animation {
+        grid-area: image;
+    }
+    /* Section#2 */
+    
+    
+    /* Section#3 */
+    
+    .box {
+        max-width: fit-content; 
+    }
+    
+    .box2{
+        margin-top: 90px;
+    }
+    
+    .box:not(:last-child) {
+        margin-right: 28px;
+    }
+    .serv-animation{
+        width: fit-content;
+        height: 251px;
+        position: relative;
+        left: 25%;
+    }
+    
+    .box h2{
+        font-size: 21px;
+    }
+    
+    .box p{
+        font-size: 15px;
+    }
+
+    .services {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center; 
+        flex-direction: column;
+    }
+    /* Section#3 */
+}
+
+@media (max-width: 854px) {
+    .serv-animation{
+        width: fit-content;
+        height: 251px;
+        position: relative;
+        left: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    .serv-animation{
+        width: fit-content;
+        height: 251px;
+        position: relative;
+        left: 15%;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .serv-animation{
+        width: fit-content;
+        height: 251px;
+        position: relative;
+        left: 10%;
+    }
+}
+
+@media (max-width: 590px) {
+    .serv-animation{
+        width: fit-content;
+        height: 251px;
+        position: relative;
+        left: 0%;
+    }
+}

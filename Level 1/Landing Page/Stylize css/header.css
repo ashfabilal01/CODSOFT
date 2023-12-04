@@ -1,0 +1,172 @@
+header{
+    padding: 2vh 5vh;
+    background-color: rgb(251, 203, 168);
+    max-width: 100%;
+}
+
+nav{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.logo img{
+    width: 25%;
+}
+
+.logo img:hover{
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    font-weight: 500;
+}
+
+.navbar ul li{
+   width: max-content;
+}
+
+.navbar ul li:hover{
+    color: rgb(246, 102, 0);
+    text-shadow: 6px 3px 20px rgba(255, 64, 0, 0.442);
+    transition: 0.3s;
+    scale: 1.1;
+}
+
+.navbar ul a li button{
+    border: 2px solid rgb(246, 102, 0);
+    color: rgb(246, 102, 0);
+    font-weight: bold;
+    border-radius: 12px;
+    font-size: 18px;
+    padding: 0.5rem;
+    position: relative;
+    top: -4px;
+}
+
+.navbar ul a li button:hover{
+    background-color: rgb(246, 102, 0);
+    color: white;
+    transition: 0.3s;
+}
+
+.hanmburger{
+    display: block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+    border: none;
+    background-color:transparent;
+    z-index: 3;
+    margin-bottom: 30px;
+}
+
+.hanmburger.bar, .hanmburger::after, .hanmburger::before{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0px;
+    transition: 0.4s;
+    
+}
+
+.hanmburger.isactive::after{
+    transform: rotate(45deg) translate(-9px, 6px);
+}
+
+.hanmburger.isactive::before{
+    transform: rotate(-45deg) translate(-13px, 0px);
+}
+
+@media(min-width: 745px){
+    .hanmburger{
+       display: none;
+    }
+   }
+
+.mobile-nav{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 1;
+    background-color: rgba(229, 170, 128, 0.934);
+    padding-top: 120px;
+    transition: 0.3s;
+}
+.mobile-nav.isactive{
+    left: 0;
+}
+
+.mobile-nav a{
+    display: block;
+    text-align: center;
+    margin: 0px auto 16px;
+    padding: 12px 16px;
+    background-color: rgb(243, 144, 74);
+    width: 100%;
+    max-width: 200px;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.mobile-nav a:hover{
+    background-color: rgb(241, 158, 99);
+    font-size: 19px;
+    transition: 0.3s;
+}
+
+@media(max-width: 745px) {
+
+    .hanmburger{
+        margin-right: 48px;
+        align-self: baseline;
+        margin-top: 39px;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+}
+
+@media (max-width: 879px) {
+ .navbar ul li{
+    font-size: 14px;
+ }   
+
+ .navbar ul li button{
+    scale: 0.9;
+ }
+}
+
+@media (max-width: 810px) {
+ .navbar ul li{
+    font-size: 12px;
+ }   
+
+ .navbar ul li button{
+    scale: 0.8;
+ }
+
+ .logo img{
+    width: 73px;
+}
+
+
+
+}
+
